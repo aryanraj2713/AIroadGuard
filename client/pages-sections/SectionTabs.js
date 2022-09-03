@@ -2,11 +2,14 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
+import CustomizedTables from "../components/Table/TableContainer";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import CustomTabs from "/components/CustomTabs/CustomTabs.js";
 import styles from "/styles/jss/nextjs-material-kit/pages/componentsSections/tabsStyle.js";
 import MediaCard from "./new";
+import { Paper } from "@material-ui/core";
+import { List } from "@material-ui/core";
 const useStyles = makeStyles(styles);
 
 export default function SectionTabs() {
@@ -51,7 +54,7 @@ export default function SectionTabs() {
                 //   },
                 // ]}
               />
-              <div>
+              {/* <div>
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -59,7 +62,12 @@ export default function SectionTabs() {
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum."
-              </div>
+              </div> */}
+              <Paper style={{ maxHeight: 300, overflow: "auto" }}>
+                <List>
+                  <CustomizedTables />
+                </List>
+              </Paper>
             </GridItem>
           </GridContainer>
         </div>
