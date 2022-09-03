@@ -10,7 +10,7 @@ AI.roadGuard can be deployed as a smart system of devices, It uses Machine Learn
 
 
 ## Dataset Credit -
-Accident Detection From CCTV Footage (Uploaded by - Mr.Charan Kumar)
+Accident Detection From CCTV Footage (by - Mr.Charan Kumar)
 
 
 License : ``` Open Data Commons Open Database License (ODbL) v1.0 ```
