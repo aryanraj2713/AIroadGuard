@@ -28,25 +28,26 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(name, calories, fat) {
-  return { name, calories, fat };
+function createData(location, time, flag, camid) {
+  return { location, time, flag, camid };
 }
 
 const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-  createData("Cupcake", 305, 3.7, 67, 4.3),
-  createData("Gingerbread", 356, 16.0, 49, 3.9),
+  createData("Potheri", "08:56", "true", "E9H45"),
+  createData("Guduvenchary", "08:56", "true", "E9H64"),
+  createData("Potheri", "09:02", "true", "E9H34"),
+  createData("Potheri", "09:02", "true", "E9H68"),
+  createData("Maraimalai Nagar", "09:08", "true", "E9H67"),
+  createData("KattanKulathur", "09:09", "true", "E9H90"),
 ];
 
 export default function CustomizedTables() {
   return (
     <TableContainer>
-      <Table sx={{ minWidth: 570 }} aria-label="customized table">
+      <Table sx={{ minWidth: 500 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Camera Id</StyledTableCell>
+            <StyledTableCell>Location</StyledTableCell>
             <StyledTableCell align="right">Time</StyledTableCell>
             <StyledTableCell align="right">isAccident</StyledTableCell>
             <StyledTableCell align="right">Delay</StyledTableCell>
@@ -54,14 +55,13 @@ export default function CustomizedTables() {
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <StyledTableRow key={row.name}>
+            <StyledTableRow key={row.camid}>
               <StyledTableCell component="th" scope="row">
-                {row.name}
+                {row.location}
               </StyledTableCell>
-              <StyledTableCell align="right">{row.calories}</StyledTableCell>
-              <StyledTableCell align="right">{row.fat}</StyledTableCell>
-              <StyledTableCell align="right">{row.carbs}</StyledTableCell>
-              <StyledTableCell align="right">{row.protein}</StyledTableCell>
+              <StyledTableCell align="right">{row.time}</StyledTableCell>
+              <StyledTableCell align="right">{row.flag}</StyledTableCell>
+              <StyledTableCell align="right">{row.camid}</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>

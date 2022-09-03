@@ -24,7 +24,11 @@ export default function VideoSection() {
       </div>
       <div>
         <Container maxWidth="lg">
-          <CardMedia component="video" autoPlay controls src="./myfile.mp4" />
+          <CardMedia
+            component="iframe"
+            height={600}
+            image="https://www.youtube.com/embed/iHCLSTCfu0M"
+          />
         </Container>
       </div>
       <div className={classes.section}>

@@ -12,13 +12,26 @@ import { Paper } from "@material-ui/core";
 import { List } from "@material-ui/core";
 const useStyles = makeStyles(styles);
 
+function createData(image) {
+  return { image };
+}
+
+const rows = [
+  createData("Potheri"),
+  createData("Guduvenchary"),
+  createData("Potheri"),
+  createData("Potheri"),
+  createData("Maraimalai Nagar"),
+  createData("KattanKulathur"),
+];
+
 export default function SectionTabs() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
       <div className={classes.container}>
         <div id="nav-tabs">
-          <h1 className={classes.title}>Camera 01 Output</h1>
+          <h1 className={classes.title}>Camera Area-01 Output</h1>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h3>
