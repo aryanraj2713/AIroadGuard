@@ -9,7 +9,7 @@ AI.roadGuard can be deployed as a smart system of devices, It uses Machine Learn
 - Powerpoint Presentation 
 - Download Model Weights.
 
-## The Machine Learning Algorithm uwu
+## The Machine Learning Algorithm
 
 
 ![Model Diagram](https://user-images.githubusercontent.com/75358720/187983957-061d3d8b-d98d-40d5-8002-425e639babfb.png)
