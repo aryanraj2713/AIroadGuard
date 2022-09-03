@@ -110,7 +110,7 @@ AI.roadGuard can be deployed as a smart system of devices, It uses Machine Learn
  <strong>ML and CV Developer<strong>
 </td>
 
- <td>
+
  <td>
 
 #### Harsh Srivastava
@@ -124,10 +124,10 @@ AI.roadGuard can be deployed as a smart system of devices, It uses Machine Learn
 </a>
 </p>
  <strong>MERN Stack Developer<strong>
-</td>
+
 
    
-<td/>
+
  <td>
 
 #### Nikhil I
