@@ -3,7 +3,7 @@
 Road accidents continue to be a leading cause of death, disabilities and hospitalization in the country despite our commitment and efforts. India ranks first in the number of road accident deaths across the 199 countries and accounts for almost 11% of the accident related deaths in the World. We aim to make emergency services work easier and efficient with the use of Machine Learning and technology. 
 
 ## About AI.roadGuard
-AI.roadGuard can be deployed as a smart system of devices, It uses Machine Learning and Deep Learning models like convolutional neural networks to predict actual time accidents using CCTV footage and inform the emergency services about the mishappening. 
+AI.roadGuard can be deployed as a smart system of devices, It uses Machine Learning and Deep Learning models like convolutional neural networks to detect accidents using CCTV footage and notify the emergency services about the situation. 
 ## Important Links
 - Demo Video
 - Powerpoint Presentation 

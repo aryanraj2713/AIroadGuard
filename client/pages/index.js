@@ -16,6 +16,7 @@ import Parallax from "/components/Parallax/Parallax.js";
 // sections for this page
 import ProductSection from "../pages-sections/ProductSection";
 import SectionTabs from "../pages-sections/SectionTabs";
+import VideoSections from "../pages-sections/Video";
 
 import styles from "/styles/jss/nextjs-material-kit/pages/components.js";
 
@@ -41,10 +42,8 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>AI.roadGuard</h1>
-                <h3 className={classes.subtitle}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h3>
+                <h1 className={classes.title}>AI roadGuard</h1>
+                <h3 className={classes.subtitle}>Let our AI handle it.</h3>
               </div>
             </GridItem>
           </GridContainer>
@@ -54,6 +53,7 @@ export default function Components(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <ProductSection />
         <SectionTabs />
+        <VideoSections />
       </div>
       <Footer />
     </div>

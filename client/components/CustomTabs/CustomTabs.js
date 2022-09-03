@@ -28,7 +28,7 @@ export default function CustomTabs(props) {
   const { headerColor, plainTabs, tabs, title, rtlActive } = props;
   const cardTitle = classNames({
     [classes.cardTitle]: true,
-    [classes.cardTitleRTL]: rtlActive
+    [classes.cardTitleRTL]: rtlActive,
   });
   return (
     <Card plain={plainTabs}>
@@ -39,10 +39,10 @@ export default function CustomTabs(props) {
           onChange={handleChange}
           classes={{
             root: classes.tabsRoot,
-            indicator: classes.displayNone
+            indicator: classes.displayNone,
           }}
         >
-          {tabs.map((prop, key) => {
+          {/* {tabs.map((prop, key) => {
             var icon = {};
             if (prop.tabIcon) {
               icon = {
@@ -51,7 +51,7 @@ export default function CustomTabs(props) {
                     <Icon>{prop.tabIcon}</Icon>
                   ) : (
                     <prop.tabIcon />
-                  )
+                  ),
               };
             }
             return (
@@ -60,24 +60,28 @@ export default function CustomTabs(props) {
                   root: classes.tabRootButton,
                   label: classes.tabLabel,
                   selected: classes.tabSelected,
-                  wrapper: classes.tabWrapper
+                  wrapper: classes.tabWrapper,
                 }}
                 key={key}
                 label={prop.tabName}
                 {...icon}
               />
             );
-          })}
+          })} */}
         </Tabs>
       </CardHeader>
-      <CardBody>
+      {/* <CardBody>
         {tabs.map((prop, key) => {
           if (key === value) {
-            return <div key={key}>{prop.tabContent}</div>;
+            return (
+              <div key={key}>
+                <div className="">{prop.tabContent}</div>
+              </div>
+            );
           }
           return null;
         })}
-      </CardBody>
+      </CardBody> */}
     </Card>
   );
 }
@@ -89,16 +93,16 @@ CustomTabs.propTypes = {
     "danger",
     "info",
     "primary",
-    "rose"
+    "rose",
   ]),
   title: PropTypes.string,
   tabs: PropTypes.arrayOf(
     PropTypes.shape({
       tabName: PropTypes.string.isRequired,
       tabIcon: PropTypes.object,
-      tabContent: PropTypes.node.isRequired
+      tabContent: PropTypes.node.isRequired,
     })
   ),
   rtlActive: PropTypes.bool,
-  plainTabs: PropTypes.bool
+  plainTabs: PropTypes.bool,
 };
