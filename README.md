@@ -161,15 +161,15 @@ AI.roadGuard can be deployed as a smart system of devices, It uses Machine Learn
   
 #### Mohd Zaid
 <p align="center">
-<img src = "https://avatars.githubusercontent.com/u/27121364?s=400&u=263e4e69519c05c350b874efc6120f411d130a67&v=4"  height="120" alt="Avya Rathod">
+<img src = "https://avatars.githubusercontent.com/u/36443577?v=4"  height="120" >
 </p>
 <p align="center">
-<a href = "https://github.com/AvyaRathod"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/avya-rathod-38b635225/">
+<a href = "https://github.com/dev-zaid"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/mohd-zaid-17713221a/">
 <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
 </a>
 </p>
- <strong>ML and CV Developer<strong>
+ <strong>MERN Stack Developer<strong>
 </td>
   
 
