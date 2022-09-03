@@ -15,7 +15,7 @@ export default function SectionTabs() {
     <div className={classes.section}>
       <div className={classes.container}>
         <div id="nav-tabs">
-          <h3>Camera 01 Output</h3>
+          <h1 className={classes.title}>Camera 01 Output</h1>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h3>
