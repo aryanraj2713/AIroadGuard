@@ -6,7 +6,7 @@ import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import CustomTabs from "/components/CustomTabs/CustomTabs.js";
 import styles from "/styles/jss/nextjs-material-kit/pages/componentsSections/tabsStyle.js";
-
+import MediaCard from "./new";
 const useStyles = makeStyles(styles);
 
 export default function SectionTabs() {
@@ -19,47 +19,47 @@ export default function SectionTabs() {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h3>
-                <small>Accident Prone Area</small>
+                <small>Accident - Realtime Output Display</small>
               </h3>
-              <CustomTabs
-                headerColor="danger"
-                tabs={[
-                  {
-                    tabName: "Realtime Output Display Screen",
-                    tabContent: (
-                      <div>
-                        <img src="/img/250x250.png" />
-                      </div>
-                    ),
-                  },
-                ]}
-              />
+              <div>
+                <CustomTabs plainTabs headerColor="danger" />
+              </div>
+              <MediaCard />
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <h3>
-                <small>Information</small>
+                <small>Information - Incoming Data About Accident</small>
               </h3>
               <CustomTabs
                 plainTabs
                 headerColor="primary"
-                tabs={[
-                  {
-                    tabName: "Incoming Data About Accident",
-                    tabContent: (
-                      <p className={classes.textCenter}>
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. So when you get something that has
-                        the name Kanye West on it, it’s supposed to be pushing
-                        the furthest possibilities. I will be the leader of a
-                        company that ends up being worth billions of dollars,
-                        because I got the answers. I understand culture. I am
-                        the nucleus.
-                      </p>
-                    ),
-                  },
-                ]}
+                // tabs={[
+                //   {
+                //     tabName: "Incoming Data About Accident",
+                //     tabContent: (
+                //       <p className={classes.textCenter}>
+                //         I think that’s a responsibility that I have, to push
+                //         possibilities, to show people, this is the level that
+                //         things could be at. So when you get something that has
+                //         the name Kanye West on it, it’s supposed to be pushing
+                //         the furthest possibilities. I will be the leader of a
+                //         company that ends up being worth billions of dollars,
+                //         because I got the answers. I understand culture. I am
+                //         the nucleus.
+                //       </p>
+                //     ),
+                //   },
+                // ]}
               />
+              <div>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </div>
             </GridItem>
           </GridContainer>
         </div>
