@@ -25,7 +25,9 @@ The model has test accuracy of 98.8% and validation accuracy of 92.8%. Further t
 ## To Do -
 - [ ] Increasing Accuracy of Machine Learning Model with the avalability of better dataset.
 - [ ] Deploying on real world devices.
-- 
+- [ ] Confusion table
+
+
 
 
 
