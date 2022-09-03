@@ -22,7 +22,6 @@ export const accident = async (cameraID: string, accidentImage: string) => {
     if (!data) {
       throw new ErrorClass("Error uploading image", 400);
     }
-    console.log(`${data.insertedCount} food data added`);
     return {
       success: true,
       status: 201,
@@ -32,6 +31,28 @@ export const accident = async (cameraID: string, accidentImage: string) => {
     console.log(error);
     throw new ErrorClass(
       error.message ?? "Image updation failed",
+      error.status.code ?? 500
+    );
+  }
+};
+
+export const getAccident = async (cameraID: string | string[]) => {
+  try {
+    const data = await (await database())
+      .collection("accidents")
+      .find({ cameraID: cameraID });
+    if (!data) {
+      throw new ErrorClass("Camera not found", 404);
+    }
+    return {
+      success: true,
+      status: 201,
+      data: data,
+    };
+  } catch (error) {
+    console.log(error);
+    throw new ErrorClass(
+      error.message ?? "Unable to fetch accident",
       error.status.code ?? 500
     );
   }
