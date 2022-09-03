@@ -91,7 +91,7 @@ AI.roadGuard can be deployed as a smart system of devices, It uses Machine Learn
 
 
 
-## Made with Love and Care by -
+## Authors UwU -
 <div align="left"> 
   <table>
 <tr align="left">
@@ -142,6 +142,8 @@ AI.roadGuard can be deployed as a smart system of devices, It uses Machine Learn
 </p>
  <strong>Competitve Programmer<strong>
 </td>
+  <td>
+  
 #### Avya Rathod
 <p align="center">
 <img src = "https://avatars.githubusercontent.com/u/27121364?s=400&u=263e4e69519c05c350b874efc6120f411d130a67&v=4"  height="120" alt="Avya Rathod">
