@@ -38,16 +38,20 @@ export const accident = async (cameraID: string, accidentImage: string) => {
 
 export const getAccident = async (cameraID: string | string[]) => {
   try {
-    const data = await (await database())
+    const accidentData = await (await database())
       .collection("accidents")
-      .find({ cameraID: cameraID });
-    if (!data) {
-      throw new ErrorClass("Camera not found", 404);
+      .find({ cameraID: cameraID })
+      .toArray();
+    const locationData = await (await database())
+      .collection("cameras")
+      .findOne({ cameraID: cameraID });
+    if (!accidentData || !locationData) {
+      throw new ErrorClass("Unable to fetch", 404);
     }
     return {
       success: true,
       status: 201,
-      data: data,
+      data: { accidentData: accidentData, locationData: locationData },
     };
   } catch (error) {
     console.log(error);
