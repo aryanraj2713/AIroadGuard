@@ -7,7 +7,13 @@ AI.roadGuard can be deployed as a smart system of devices, It uses Machine Learn
 ## Important Links
 - Demo Video
 - Powerpoint Presentation 
-- Download Model Weights.
+
+
+## Dataset Link and Credit -
+[US Accidents (2016 - 2021):A Countrywide Traffic Accident Dataset](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents)
+
+
+License : ``` CC BY-NC-SA 4.0 ```
 
 ## The Machine Learning Algorithm
 
