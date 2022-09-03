@@ -14,8 +14,8 @@ import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import Parallax from "/components/Parallax/Parallax.js";
 // sections for this page
-import ProductSection from "/pages-sections/LandingPage-Sections/ProductSection.js";
-import SectionTabs from "/pages-sections/Components-Sections/SectionTabs.js";
+import ProductSection from "../pages-sections/ProductSection";
+import SectionTabs from "../pages-sections/SectionTabs";
 
 import styles from "/styles/jss/nextjs-material-kit/pages/components.js";
 
