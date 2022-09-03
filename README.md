@@ -10,7 +10,7 @@ AI.roadGuard can be deployed as a smart system of devices, It uses Machine Learn
 
 
 ## Dataset Credit -
-Accident Detection From CCTV Footage (Uploaded by - Mr.Charan Kumar)
+Accident Detection From CCTV Footage (by - Mr.Charan Kumar)
 
 
 License : ``` Open Data Commons Open Database License (ODbL) v1.0 ```
@@ -22,7 +22,10 @@ License : ``` Open Data Commons Open Database License (ODbL) v1.0 ```
 The model has test accuracy of 98.8% and validation accuracy of 92.8%. Further to reduce false calls to the portal we have deviced some measures.
 
 
-
+## To Do -
+- [ ] Increasing Accuracy of Machine Learning Model with the avalability of better dataset.
+- [ ] Deploying on real world devices.
+- 
 
 
 
