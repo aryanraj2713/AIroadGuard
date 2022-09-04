@@ -9,7 +9,7 @@ accidentRouter.get("/getAccident", handleGetAccident);
 
 async function handleAccident(req: Request, res: Response, next: NextFunction) {
   try {
-    const result = await accident(req.body.cameraID, req.body.imageB64);
+    const result = await accident(req.body.body.cameraID, req.body.body.imageB64);
     if (result.success) {
       res
         .status(result.status)
