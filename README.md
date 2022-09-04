@@ -87,7 +87,14 @@ The model has test accuracy of 98.8% and validation accuracy of 92.8%. Further t
 
 
 
-
+ <div align="left">
+ <p>
+ <br>
+   <img src="https://img.shields.io/badge/License-MIT-yellow.svg?logo=Microsoft%20Word&style=for-the-badge" height="28"/><br>
+   <br><strong>AIRoadGuard</strong> is under MIT License, Please Read the <strong>LICENSE</strong>
+  <p>
+ </div>
+ <br>
 
 
 
@@ -185,4 +192,16 @@ The model has test accuracy of 98.8% and validation accuracy of 92.8%. Further t
   
 
 </tr>
-</div
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
