@@ -44,6 +44,7 @@ function sleep() {
 }
 
 export default function CustomizedTables({ accidentData }) {
+  console.log(accidentData);
   //   console.log(accidentData);
   //   const refreshData = () => {
   //     if (process.browser) {
@@ -66,7 +67,7 @@ export default function CustomizedTables({ accidentData }) {
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <StyledTableRow key={row.camid}>
+            <StyledTableRow>
               <StyledTableCell component="th" scope="row">
                 {row.location}
               </StyledTableCell>

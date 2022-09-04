@@ -28,7 +28,7 @@ export default function Footer(props) {
   });
   return (
     <footer className={footerClasses}>
-      <div className={classes.container}>Lorem Ipsum Footer</div>
+      <div className={classes.container}>Ai RoadGuard By Team FOMO</div>
     </footer>
   );
 }
