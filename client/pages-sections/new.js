@@ -9,7 +9,7 @@ export default function MediaCard() {
         component="img"
         height="300"
         width="300"
-        image="/img/accident.jfif"
+        image="/img/accident.jpeg"
         alt="green iguana"
       />
     </Card>

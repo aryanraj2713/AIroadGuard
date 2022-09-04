@@ -1,4 +1,5 @@
 import * as React from "react";
+import Router, { useRouter } from "next/router";
 import axios from "axios";
 import { styled } from "@mui/material/styles";
 import Table from "@mui/material/Table";
@@ -32,22 +33,26 @@ function createData(location, time, flag, camid) {
 }
 
 const rows = [
-  createData("Potheri", "08:56", "true", "E9H45"),
-  createData("Guduvenchary", "08:56", "true", "E9H64"),
-  createData("Potheri", "09:02", "true", "E9H34"),
-  createData("Potheri", "09:02", "true", "E9H68"),
-  createData("Maraimalai Nagar", "09:08", "true", "E9H67"),
-  createData("KattanKulathur", "09:09", "true", "E9H90"),
+  createData("Potheri", "11:01:39", "true", "E9H45"),
+  createData("Potheri", "08::42:56", "true", "E9H45"),
+  createData("Guduvenchary", "08:09:56", "true", "E9H64"),
+  createData("Potheri", "09:43:02", "true", "E9H34"),
 ];
+function sleep() {
+  ms = getRandom(2, 10) * 1000;
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
-export default function CustomizedTables() {
-  //   const data = await axios.get(
-  //     "http://localhost:8080/api/accident/getAccident",
-  //     {
-  //       headers: { cameraID: "ENH45" },
+export default function CustomizedTables({ accidentData }) {
+  //   console.log(accidentData);
+  //   const refreshData = () => {
+  //     if (process.browser) {
+  //       Router.push("/");
   //     }
-  //   );
-
+  //   };
+  //   setTimeout(() => {
+  //     refreshData();
+  //   }, 5000);
   return (
     <TableContainer>
       <Table sx={{ minWidth: 500 }} aria-label="customized table">
@@ -76,6 +81,27 @@ export default function CustomizedTables() {
   );
 }
 
+export async function getServerSideProps() {
+  try {
+    axios
+      .get("http://localhost:8080/api/accident/getAccident")
+      .then((getResponse) => {
+        console.log("GET Response");
+        console.log(getResponse.data);
+        data = getResponse.data;
+        const accidentData = data;
+      })
+      .catch(function (error) {
+        console.log("Error while fetching market updates");
+      });
+    const accidentData = data.accidentData;
+    console.log(accidentData);
+
+    return { props: { accidentData } };
+  } catch (error) {
+    console.log(error);
+  }
+}
 // import * as React from "react";
 // import axios from "axios";
 // import { styled } from "@mui/material/styles";
@@ -119,23 +145,6 @@ export default function CustomizedTables() {
 //   return Math.random() * (max - min) + min;
 // }
 
-// function sleep() {
-//   ms = getRandom(2, 10) * 1000;
-//   return new Promise((resolve) => setTimeout(resolve, ms));
-// }
-
-// async function renderAccidents(accData) {
-//   for (let i = 0; i < length(accData); i++) {
-//     <StyledTableRow key={accDataaccData[i].cameraID}>
-//       <StyledTableCell component="th" scope="row">
-//         {accData[i].location}
-//       </StyledTableCell>
-//       <StyledTableCell align="right">{accData[i].time}</StyledTableCell>
-//       <StyledTableCell align="right">{accData[i].camid}</StyledTableCell>
-//     </StyledTableRow>;
-//     await sleep();
-//   }
-// }
 // const rows = [
 //   createData("Potheri", "08:56", "E9H45"),
 //   createData("Guduvenchary", "08:56", "E9H64"),
