@@ -109,7 +109,7 @@ The model has test accuracy of 98.8% and validation accuracy of 92.8%. Further t
 
 
 
-## Authors UwU -
+## Authors  -
 <div align="left"> 
   <table>
 <tr align="left">
