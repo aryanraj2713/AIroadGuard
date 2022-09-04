@@ -31,7 +31,7 @@ export const accident = async (cameraID: string, accidentImage: string) => {
     console.log(error);
     throw new ErrorClass(
       error.message ?? "Image updation failed",
-      error.status.code ?? 500
+      error.status ?? 500
     );
   }
 };
@@ -57,7 +57,7 @@ export const getAccident = async (cameraID: string | string[]) => {
     console.log(error);
     throw new ErrorClass(
       error.message ?? "Unable to fetch accident",
-      error.status.code ?? 500
+      error.status ?? 500
     );
   }
 };
