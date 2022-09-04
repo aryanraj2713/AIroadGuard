@@ -5,9 +5,9 @@ Road accidents continue to be a leading cause of death, disabilities and hospita
 ## About AI.roadGuard
 AI.roadGuard can be deployed as a smart system of devices, It uses Machine Learning and Deep Learning models like convolutional neural networks to detect accidents using CCTV footage and notify the emergency services about the situation. 
 ## Important Links
-- [Demo Video](https://drive.google.com/drive/folders/1-lZ9JB3BImHUUeWZQGRCfAA23EdrMrSD?usp=sharing)
+- Demo Video
 - [Powerpoint Presentation](https://docs.google.com/presentation/d/1dFQMhT8eEA28N0dXzIjBJJ7u-gJJe14Dgrg54BQx9ac/edit?usp=sharing)
-- [Download model Weights](https://drive.google.com/file/d/12e8KQITanvuicxwqTAxRNztLhlE7Evod/view?usp=sharing)
+- [Download Model Weights](https://drive.google.com/file/d/12e8KQITanvuicxwqTAxRNztLhlE7Evod/view?usp=sharing)
 
 
 ## Dataset Credit -
