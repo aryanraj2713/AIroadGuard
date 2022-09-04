@@ -3,36 +3,52 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // core components
+import { Container } from "@material-ui/core";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
-
+import { CardMedia } from "@material-ui/core";
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js";
 
 const useStyles = makeStyles(styles);
 
-export default function ProductSection() {
+export default function VideoSection() {
   const classes = useStyles();
   return (
-    <div className={classes.section}>
-      <GridContainer justify="center">
-        <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>About the Model</h2>
-          <h5 className={classes.description}>
-            Road accidents continue to be a leading cause of death, disabilities
-            and hospitalization in the country despite our commitment and
-            efforts. India ranks first in the number of road accident deaths
-            across the 199 countries and accounts for almost 11% of the accident
-            related deaths in the World. We aim to make emergency services work
-            easier and efficient with the use of Machine Learning and
-            technology.
-            <br />
-            AI.roadGuard can be deployed as a smart system of devices, It uses
-            Machine Learning and Deep Learning models like convolutional neural
-            networks to predict actual time accidents using CCTV footage and
-            inform the emergency services about the mishappening.
-          </h5>
-        </GridItem>
-      </GridContainer>
+    <div>
+      <div className={classes.section}>
+        <GridContainer justify="center">
+          <GridItem xs={12} sm={12} md={8}>
+            <h2 className={classes.title}>Video Demonstartion of the Model</h2>
+          </GridItem>
+        </GridContainer>
+      </div>
+      <div>
+        <Container maxWidth="lg">
+          <CardMedia
+            component="iframe"
+            height={600}
+            image="https://www.youtube.com/embed/iHCLSTCfu0M"
+          />
+        </Container>
+      </div>
+      <div className={classes.section}>
+        <GridContainer justify="center">
+          <GridItem xs={12} sm={12} md={8}>
+            <h5 className={classes.description}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </h5>
+          </GridItem>
+        </GridContainer>
+      </div>
+      <GridItem xs={12} sm={12} md={8}>
+        <h1 className={classes.title}></h1>
+      </GridItem>
     </div>
   );
 }
